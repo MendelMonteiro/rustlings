@@ -1,11 +1,9 @@
 // variables3.rs
 // Make me compile! Execute the command `rustlings hint variables3` if you want a hint :)
 
-// I AM NOT DONE
-
 fn main() {
-    let x = 3;
+    let x:u32 = 3;
     println!("Number {}", x);
-    x = 5;
+    let x:f64 = 5.0;
     println!("Number {}", x);
 }
