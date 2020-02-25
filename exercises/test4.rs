@@ -17,8 +17,13 @@ macro_rules! my_macro {
     // "Hello $val"
 }
 
-fn main() {
-    if my_macro!("world!") != "Hello world!" {
-        panic!("Oh no! Wrong output!");
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_my_macro() {
+        assert_eq!(my_macro!("world!"), "Hello world!");
     }
 }
+
