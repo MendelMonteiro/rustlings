@@ -8,8 +8,9 @@ fn slice_out_of_array() {
 
 <<<<<<< HEAD
     let nice_slice = &a[1..4];
+=======
+    let nice_slice = ???
 
     assert_eq!([2, 3, 4], nice_slice)
-=======
->>>>>>> feature: makes "compile" exercise print output, resolves #270
+>>>>>>> fix: revert primitive_types4 (#296)
 }
