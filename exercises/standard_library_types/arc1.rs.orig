@@ -4,7 +4,12 @@
 // somewhere. Try not to create any copies of the `numbers` Vec!
 // Execute `rustlings hint arc1` for hints :)
 
+<<<<<<< HEAD
+=======
+// I AM NOT DONE
+
 #![forbid(unused_imports)] // Do not change this, (or the next) line.
+>>>>>>> fix(arc1): Passively introduce attributes (#429)
 use std::sync::Arc;
 use std::thread;
 
