@@ -5,7 +5,17 @@
 
 // Write a macro that passes the test! No hints this time, you can do it!
 
-// I AM NOT DONE
+macro_rules! my_macro { 
+    ($val:expr) => {
+        {
+            let mut temp_str = String::from("Hello ");
+            temp_str.push_str($val);
+            temp_str 
+        }
+    };
+    // or 
+    // "Hello $val"
+}
 
 fn main() {
     if my_macro!("world!") != "Hello world!" {
